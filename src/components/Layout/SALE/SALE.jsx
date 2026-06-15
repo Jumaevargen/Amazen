@@ -18,8 +18,8 @@ function SALE() {
         </div>
       </div>
     </section>
+    
 
-    section
   );
 }
 
