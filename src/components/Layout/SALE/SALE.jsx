@@ -16,26 +16,64 @@ function SALE() {
             </div>
           </div>
         </div>
+         <div className="filter">
+          <div className="filter-header">
+            <h1>FALTER</h1>
 
-        <div className="filter">
-          <h1>FALTER</h1>
-          <div className="fil-text">
-            <h2>Filter</h2>
-            <select>
-              <option value="popular">Popular</option>
-              <option value="csocs">Csocs</option>
-              <option value="shlepka">shlepka</option>
-              <option value="argen gay">argen gay</option>
-            </select>
-            <h4>100 dpmg</h4>
+            <div className="filter-controls">
+              <span>Filter</span>
+              <select>
+                <option value="popular">Popular</option>
+                <option value="csocs">Csocs</option>
+                <option value="shlepka">Shlepka</option>
+              </select>
+            </div>
+
+            <span className="filter-count">100 dpmg</span>
           </div>
-          <div className="filter-img">
-            <img src="./saleLogo1.svg" alt="logo" />
-            <div className="fil-com">
-              <h1>New Balance </h1>
-              <div className="fil-bn">
-                <h2>34.99$ - </h2>
-                <h3>sale up 20%</h3>
+
+          <div className="filter-grid">
+            <div className="product-card">
+              <div className="card-img">
+                <img src="./saleLogo1.svg" alt="New Balance" />
+              </div>
+              <h3>New Balance</h3>
+              <div className="card-price">
+                <span className="price">34.99$</span>
+                <span className="sale">- sale up 20%</span>
+              </div>
+            </div>
+
+            <div className="product-card">
+              <div className="card-img">
+                <img src="./saleLogo2.svg" alt="Nike Air" />
+              </div>
+              <h3>Nike Air</h3>
+              <div className="card-price">
+                <span className="price">62.99$</span>
+                <span className="sale">- sale up 30%</span>
+              </div>
+            </div>
+
+            <div className="product-card">
+              <div className="card-img">
+                <img src="./saleLogo3.svg" alt="Nike shoots" />
+              </div>
+              <h3>Nike shoots</h3>
+              <div className="card-price">
+                <span className="price">1200$</span>
+                <span className="sale">- sale up 0%</span>
+              </div>
+            </div>
+
+            <div className="product-card">
+              <div className="card-img">
+                <img src="./saleLogo4.svg" alt="Nike Air 2" />
+              </div>
+              <h3>Nike Air 2</h3>
+              <div className="card-price">
+                <span className="price">39.99$</span>
+                <span className="sale">- sale up 40%</span>
               </div>
             </div>
           </div>

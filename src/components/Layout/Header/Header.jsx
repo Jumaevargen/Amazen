@@ -1,5 +1,6 @@
 import { Heart, Search, ShoppingCart, UserRound } from "lucide-react";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,13 +14,13 @@ function Header() {
 
       <nav className="header-nav">
         <ul>
-         <li><a href="/">Home</a></li> 
-          <li><a href="#">MEN</a></li>
+         <li><Link to="/">HOME</Link></li> 
+         <li><Link to="/men">MEN</Link></li> 
           <li><a href="#">WOMEN</a></li>
           <li><a href="#">SHOES</a></li>
           <li><a href="#">ACCESSORIES</a></li>
-       <li><a href="/sale">SALE</a>
-       </li>
+         <li><Link to="/sale">SALE</Link></li> 
+       
         </ul>
       </nav>
 

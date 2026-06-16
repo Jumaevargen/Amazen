@@ -15,28 +15,56 @@
     gap: 6px;
   }
 
-  .header-nav {
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      gap: 30px;
+  .header-nav {  // не забудь точку: .header-nav
+  ul {
+    display: flex;
+    list-style: none;
+    font-family: ADLaM;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;  // нужно для ::after
+    padding-bottom: 3px; // место под линию без сдвига
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background: #c70808;
+      transition: width 0.3s ease, left 0.3s ease;
     }
 
-    a {
-      text-decoration: none;
-      color: #222;
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.5px;
+    &:hover {
+      color: #be0a0a;
 
-      &:hover {
-        color: #c8a96e; 
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    // Активный пункт
+    &.active {
+      color: #9513ff;
+
+      &::after {
+        width: 100%;
+        left: 0;
       }
     }
   }
-
+}
   .header-actions {
     display: flex;
     align-items: center;
@@ -61,10 +89,10 @@
 
     svg {
       cursor: pointer;
-      color: #222;
+      color: #000000;
 
-      &:hover {
-        color: #c8a96e;
+      &:hover { 
+        color: #c70808;
       }
     }
   }
