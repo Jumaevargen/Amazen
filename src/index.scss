@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Adamina&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Adamina&display=swap");
 
 *,
 *::before,
@@ -128,7 +127,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
 }
 
 table {
@@ -169,7 +168,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   container-type: inline-size;

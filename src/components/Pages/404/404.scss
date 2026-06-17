@@ -1,0 +1,37 @@
+.NotFound {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.NotFound-text {
+    display: flex;
+    flex-direction: column;
+  h1 {
+    font-family: "ADLaM Display", system-ui;
+    font-size: 128px;
+  }
+  h2 {
+     font-family: "ADLaM Display", system-ui;
+    font-size: 40px;
+
+  }
+  p {
+    font-family: "Adamina", serif;
+    font-size: 24px;
+    color: #727272;
+    padding: 30px 0;
+  }
+  button {
+    font-size: 18px;
+    width: 271px;
+    height: 54px;
+    border: 2px solid #ABABAB;
+    background: transparent;
+     font-family: "ADLaM Display", system-ui;
+     border-radius: 12px;
+  }
+  .NotFound-img {
+    width: 641px;
+    height: 697px;
+  }
+}
