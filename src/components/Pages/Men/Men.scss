@@ -1,0 +1,134 @@
+#men{
+    .men {
+        width: 100%;
+        .men-img {
+            position: relative;
+            img {
+                width: 100%;
+                height: 900;
+            }
+            .men-text {
+                position: absolute;
+                top: 30%;
+                left: 100px;
+                color: white;
+                h1 {
+                    font-size: 72px;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                    font-family: Adminia;
+                }
+                p{
+                    
+                    font-size: 20px;
+                    font-weight: 200;
+                    font-family: Adminia;
+                    color: white;
+                }
+            }
+        }
+        .men-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 30px;
+            cursor: pointer;
+            .men-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                width: 100px;
+                height: 126px;
+                border-radius: 10px;
+                object-fit: cover; 
+                display: block;
+                margin-bottom: 12px;
+                background: #f5f5f5; 
+            }
+            h1{
+                font-size: 14px;
+                font-weight: 500;
+                color: #111;
+                margin: 0;
+            }
+            }
+        }
+        .best-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                font-size: 15px;
+                font-weight: normal;
+                color: black;
+                font-family: "ADLaM Display", system-ui;
+            }
+            .best-text {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                cursor: pointer;
+                font-family: Adminia;
+                svg {
+                    font-size: 18px;
+                    color: black;
+                }
+                &:hover {
+                    svg{color: blue;}
+                    color: blue;
+                }
+            }
+        }
+        .best-cards {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            .best-img {
+                h6 {
+                    font-size: 18px;
+                    color: black;
+                    font-family: Adminia;
+                    margin-top: 15px;
+                    span {
+                        font-size: 16px;
+                        color: black;
+                        font-family: "ADLaM Display", system-ui;
+                    }
+                }
+            }
+        }
+        .best-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            .banner-img {
+                position: relative;
+                .banner-text {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50px;
+                    h4 {
+                        font-size: 26px;
+                        font-family: Adminia;
+                    }
+                    h5 {
+                        font-size: 18px;
+                        font-family: Adminia;
+                    }
+                    .banner-btn {
+                        margin-top: 20px;
+                        button {
+                            background: white;
+                            color: black;
+                            border: none;
+                            padding: 9px 20px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

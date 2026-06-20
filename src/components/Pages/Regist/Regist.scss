@@ -1,0 +1,53 @@
+#regist{
+    padding: 60px 0;
+}
+.regist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .regist-text{
+        h1{
+            font-size: 25px;
+            font-family: ADLaM;
+            font-weight: 600;
+        }
+        h2{
+            font-size: 16px;
+            font-family: ADLaM;
+        }
+    }
+    .regist-in{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+          flex-shrink: 0;
+
+         input {
+    width: 338px;
+    height: 46px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+     color: #050025;
+    outline: none;
+
+    &::placeholder {
+      color: #bbb;
+    }
+
+    &:focus {
+      border-color: #a5a5a5;
+    }
+  }
+        button{
+            width: 144px;
+            height: 45px;
+            background: #070039;
+            font-family: ADLaM;
+            color: white;
+            border-radius: 7px;
+            font-size: 14px;
+        }
+    }
+}

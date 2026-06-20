@@ -1,32 +1,41 @@
-import './Header.scss';
-import { Search, Heart, ShoppingCart, User } from "lucide-react";
+
+import { Heart, Search, ShoppingCart, UserRound } from "lucide-react";
+import "./Header.scss";
 
 function Header() {
-  return(
-    <div id='header'>
-      <div className="container">
-        <div className="header">
-          <div className="header-logo">
-            <img src="./Logo1.png" alt="logo1" />
-            <img src="./Logo2.png" alt="logo2" />
-          </div>
-          <div className="header-nav">
-            <a href="#">NEW IN</a>
-            <a href="#">MEN</a>
-            <a href="#">WOMEN</a>
-            <a href="#">SHOES</a>
-            <a href="#">ACCESSORIES</a>
-            <a href="#">SALE</a>
-          </div>
-          <div className="header-icons">
-            <Search />
-            <Heart />
-            <ShoppingCart />
-            <User />
-          </div>
+  return (
+<header id="header">
+  <div className="container">
+    <div className="header">
+      <div className="header-logo-wrap">
+        <img src="./public/header1.svg" alt="logo" />
+        <img src="./public/header2.svg" alt="logo" />
+      </div>
+
+      <nav className="header-nav">
+        <ul>
+         <li><a href="/">Home</a></li> 
+          <li><a href="Men">MEN</a></li>
+          <li><a href="Women">WOMEN</a></li>
+          <li><a href="#">SHOES</a></li>
+          <li><a href="#">ACCESSORIES</a></li>
+       <li><a href="/sale">SALE</a>
+       </li>
+        </ul>
+      </nav>
+
+      <div className="header-actions">
+        <div className="search-box">
+          <input type="text" placeholder="Search..." />
+          <Search size={16} />
         </div>
+        <Heart size={20} />
+        <ShoppingCart size={20} />
+        <UserRound size={20} />
       </div>
     </div>
-  )
+  </div>
+</header>
+  );
 }
 export default Header;

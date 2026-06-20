@@ -1,0 +1,44 @@
+#arrival {
+  padding: 60px 0;
+}
+.arrival {
+  .arrival-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 22px;
+      font-family: ADLaM;
+    }
+    h2 {
+      font-size: 22px;
+      font-family: ADLaM;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+.arrival-imgs {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+        
+  img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  h3{
+    font-size: 14px;
+    font-family: Alef;
+  }
+  h4{
+    font-size: 14px;
+    font-family: ADlaM;
+    font-weight: 600;
+  }
+}

@@ -1,3 +1,64 @@
 #hero{
     background: #000;
+    color: white;
+    position: relative;
+    
+}
+
+.hero {
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.hero-text{
+    position: absolute;
+    top: 300px;
+    left: 90px;
+    gap: 20px;
+    cursor: not-allowed;
+    h1{
+        font-family: ADLaM;
+        font-size: 76px;
+        display: flex;
+        flex-direction: column;
+        line-height: 73px;
+        span{
+            font-weight: 900;
+        }
+    }
+    p{
+         font-family: Alef;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 20px 0;
+
+    }
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   .left{
+    background: white;
+    width: 150px;
+    height: 41px;
+    border-radius: 25px;
+    font-family: Alef;
+    font-size: 14px;
+    font-weight: 600;
+   }
+    .right{
+    background: rgb(0, 0, 0);
+    width: 216px;
+    height: 41px;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-family: Alef;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+   }
 }
